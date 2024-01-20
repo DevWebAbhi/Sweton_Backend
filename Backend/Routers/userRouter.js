@@ -27,7 +27,7 @@ userRouter.post('/signup',async(req,res)=>{
         });
         await data.save();
         
-       const token =await jwt.sign({ userID:data.id }, JWT_PASSCODE);
+       const token =await jwt.sign({ userID:data.id ,type:'local'}, JWT_PASSCODE);
        
         res.status(200).send({msg:'sucessfull',token});
     } catch (error) {
