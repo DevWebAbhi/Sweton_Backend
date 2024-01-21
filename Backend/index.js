@@ -128,7 +128,7 @@ app.options('*', (req, res) => {
   res.sendStatus(501).send({ message: 'Not Implemented' });
 });
 
-app.listen(process.env.PORT, async () => {
+app.listen(PORT, async () => {
   try {
     await connect;
     console.log('Connected to mongodb atlas');
