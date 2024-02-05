@@ -14,7 +14,6 @@ const JWT_PASSCODE=process.env.JWT_PASSCODE;
 
 app.use(cors());
 app.use(cors({ origin: 'https://sweton-full-stack-612603mqd-devwebabhi.vercel.app' }));
-app.use(cors({ origin: 'https://sweton-full-stack-612603mqd-devwebabhi.vercel.app/' }));
 app.use(express.json());
 require('dotenv').config();
 
